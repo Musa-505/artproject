@@ -9,16 +9,12 @@ import { Artwork } from "../data/artworks";
 interface ArtworkGridProps {
   displayedArtworks: Artwork[];
   openFullScreen: (artwork: Artwork) => void;
-  toggleFavorite: (id: string) => void;
-  isFavorited: (id: string) => boolean;
   viewMode: "gallery" | "favorites";
 }
 
 const ArtworkGrid: React.FC<ArtworkGridProps> = ({
   displayedArtworks,
   openFullScreen,
-  toggleFavorite,
-  isFavorited,
   viewMode,
 }) => {
   return (

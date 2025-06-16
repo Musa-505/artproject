@@ -109,8 +109,6 @@ const ArtGalleryApp: React.FC = () => {
       <ArtworkGrid
         displayedArtworks={displayedArtworks}
         openFullScreen={openFullScreen}
-        toggleFavorite={toggleFavorite}
-        isFavorited={isFavorited}
         viewMode={viewMode}
       />
 
