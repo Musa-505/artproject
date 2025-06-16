@@ -14,7 +14,6 @@ interface ArtworkGridProps {
   viewMode: "gallery" | "favorites";
 }
 
-// Өнер туындыларының торын көрсететін компонент.
 const ArtworkGrid: React.FC<ArtworkGridProps> = ({
   displayedArtworks,
   openFullScreen,
@@ -42,8 +41,6 @@ const ArtworkGrid: React.FC<ArtworkGridProps> = ({
             key={artwork.id}
             artwork={artwork}
             openFullScreen={openFullScreen}
-            toggleFavorite={toggleFavorite}
-            isFavorited={isFavorited}
           />
         ))}
       </div>

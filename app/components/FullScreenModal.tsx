@@ -10,6 +10,7 @@ import {
 } from "@heroicons/react/24/outline";
 import { HeartIcon as HeartIconSolid } from "@heroicons/react/24/solid";
 import { Artwork } from "../data/artworks";
+import Image from "next/image";
 
 interface FullScreenModalProps {
   selectedArtwork: Artwork;
@@ -75,7 +76,7 @@ const FullScreenModal: React.FC<FullScreenModalProps> = ({
         </div>
       </div>
       <div className="flex-grow flex items-center justify-center w-full max-w-4xl bg-black bg-opacity-80 rounded-b-lg overflow-hidden">
-        <img
+        <Image
           src={selectedArtwork.src}
           alt={selectedArtwork.title}
           className="max-w-full max-h-full object-contain"

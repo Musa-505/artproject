@@ -7,6 +7,7 @@ import {
   HeartIcon as HeartIconOutline,
   MagnifyingGlassIcon,
 } from "@heroicons/react/24/outline";
+import Image from "next/image";
 
 interface HeaderProps {
   searchTerm: string;
@@ -35,7 +36,7 @@ const Header: React.FC<HeaderProps> = ({
       <div className="relative bg-black z-10 flex items-center justify-between p-4 md:p-6 lg:p-8">
         {/* Логотип */}
         <div className="flex items-center space-x-2">
-          <img
+          <Image
             src="/logo.png"
             alt="Өнер галереясының логотипі"
             className="w-24"
